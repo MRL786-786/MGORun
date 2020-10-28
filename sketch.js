@@ -24,7 +24,7 @@ function setup() {
   monkey= createSprite(80,315,20,20);
  monkey.addAnimation("moving",monkey_running);
   monkey.scale=0.1;
-  monkey.debug=true;
+
 
   
   ground=createSprite(400,350,900,10);
@@ -69,8 +69,7 @@ if (monkey.isTouching(rockG)){
   if (gameState === END){
     ground.velocityX = 0;
     
-    monkey.y = 235;
-    monkey.scale = 0.12;
+
  
     
     rockG.setVelocityXEach(0);
